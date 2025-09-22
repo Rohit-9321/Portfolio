@@ -16,7 +16,7 @@ const Skills = () => {
     {
       category: 'Backend',
       icon: <Database className="w-6 h-6" />,
-      skills: ['Node.js', 'Express.js', 'Python', 'Django', 'MySQL', 'MongoDB','Spring Boot'],
+      skills: ['Node.js', 'Express.js', 'Python', 'MySQL', 'MongoDB','Spring Boot'],
       color: 'from-blue-400 to-blue-600',
     },
     {
