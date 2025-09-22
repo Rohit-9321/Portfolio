@@ -49,12 +49,12 @@ const Contact = () => {
                 <span>Uttan Bhayander West , Mumbai Maharastra, India(401106)</span>
               </div>
             </div>
-
+            
             <div className="flex space-x-6">
-              <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/Rohit-9321" target="_blank" rel="noopener noreferrer">
                 <Github className="w-6 h-6 hover:text-blue-400 transition-colors" />
               </a>
-              <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+              <a href="https://linkedin.com/in/rohitgupta9321" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="w-6 h-6 hover:text-blue-400 transition-colors" />
               </a>
             </div>
