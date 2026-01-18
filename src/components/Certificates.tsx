@@ -20,7 +20,7 @@ const Certificates = () => {
       id: 2,
       title: ' Introduction to Prompt Engineering with GitHub Copilo',
       issuer: 'Microsoft & Simplilearn SkillUp',
-      date: '20222025-09-04',
+      date: '2025-09-04',
       image: 'https://res.cloudinary.com/dbiapbspe/image/upload/v1758437467/WhatsApp_Image_2025-09-21_at_12.18.30_hrhko3.jpg',
       credentialUrl: 'https://res.cloudinary.com/dbiapbspe/image/upload/v1758437467/WhatsApp_Image_2025-09-21_at_12.18.30_hrhko3.jpg',
     },
