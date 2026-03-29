@@ -11,7 +11,7 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <div className="bg-black text-white min-h-screen space-y-8">
+    <div className="bg-black text-white min-h-screen space-y-8 overflow-x-hidden">
       <Navbar />
       <Hero />
       <About />

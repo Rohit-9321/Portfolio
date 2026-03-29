@@ -9,16 +9,16 @@ const About = () => {
   const isInView = useInView(ref, { once: true, threshold: 0.3 });
 
   return (
-    <section id="about" className="py-12 px-4">
+    <section id="about" className="py-12 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-10 sm:mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
             About Me
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto rounded-full" />
@@ -30,7 +30,7 @@ const About = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="relative"
         >
-          <div className="relative backdrop-blur-md bg-gradient-to-br from-cyan-900/10 to-blue-900/10 border border-cyan-500/20 rounded-3xl p-8 md:p-12 shadow-2xl">
+          <div className="relative backdrop-blur-md bg-gradient-to-br from-cyan-900/10 to-blue-900/10 border border-cyan-500/20 rounded-3xl p-5 sm:p-8 md:p-12 shadow-2xl">
             {/* Glassmorphism overlay */}
             <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-white/0 rounded-3xl" />
             
@@ -51,24 +51,24 @@ const About = () => {
             />
 
             <div className="relative z-10">
-              <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                 <motion.div
                   initial={{ opacity: 0, x: -50 }}
                   animate={isInView ? { opacity: 1, x: 0 } : {}}
                   transition={{ duration: 0.8, delay: 0.4 }}
                   className="space-y-6"
                 >
-                  <h3 className="text-2xl md:text-3xl font-bold text-cyan-300 mb-6">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-cyan-300 mb-4 sm:mb-6">
                     Passionate Developer & Problem Solver
                   </h3>
                   
-                  <p className="text-gray-300 text-lg leading-relaxed">
+                  <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
                     I’m a Full Stack Developer with experience in React.js, Node.js, databases, Java APIs,and Docker. 
                     I have completed an internship as a backend developer, where I gained hands-on experience building and maintaining robust backend systems. 
                     I focus on creating clean, responsive, and efficient web applications and enjoy working on projects end-to-end
                   </p>
                   
-                  <p className="text-gray-300 text-lg leading-relaxed">
+                  <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
                     When I'm not coding, you'll find me exploring new technologies, contributing to 
                     open-source projects, or sharing knowledge with the developer community. I believe 
                     in continuous learning and staying up-to-date with the latest industry trends.
@@ -101,7 +101,7 @@ const About = () => {
                   transition={{ duration: 0.8, delay: 0.6 }}
                   className="relative"
                 >
-                  <div className="relative w-80 h-80 mx-auto">
+                  <div className="relative w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 mx-auto">
                     {/* Profile image placeholder with animated border */}
                     <motion.div
                       className="absolute inset-0 rounded-full bg-gradient-to-br from-cyan-400 to-blue-600"

@@ -62,27 +62,27 @@ const Certificates = () => {
   const currentCert = certificates[currentIndex];
 
   return (
-    <section id="certificates" className="py-12 px-4">
+    <section id="certificates" className="py-12 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-10 sm:mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
             Certificates & Achievements
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto rounded-full" />
         </motion.div>
 
         {/* Single Certificate Display with Navigation */}
-        <div className="relative max-w-4xl mx-auto">
+        <div className="relative max-w-4xl mx-auto overflow-x-hidden">
           {/* Navigation Arrows */}
           <motion.button
             onClick={prevCertificate}
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 p-4 bg-blue-600 hover:bg-blue-500 rounded-full text-white shadow-lg transition-colors duration-300"
+            className="absolute left-1 sm:left-0 top-1/2 -translate-y-1/2 z-10 p-2.5 sm:p-4 bg-blue-600 hover:bg-blue-500 rounded-full text-white shadow-lg transition-colors duration-300"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             disabled={certificates.length <= 1}
@@ -92,7 +92,7 @@ const Certificates = () => {
           
           <motion.button
             onClick={nextCertificate}
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 p-4 bg-blue-600 hover:bg-blue-500 rounded-full text-white shadow-lg transition-colors duration-300"
+            className="absolute right-1 sm:right-0 top-1/2 -translate-y-1/2 z-10 p-2.5 sm:p-4 bg-blue-600 hover:bg-blue-500 rounded-full text-white shadow-lg transition-colors duration-300"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             disabled={certificates.length <= 1}
@@ -103,11 +103,11 @@ const Certificates = () => {
           {/* Certificate Card */}
           <motion.div
             key={currentCert.id}
-            initial={{ opacity: 0, x: 100 }}
+            initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -100 }}
+            exit={{ opacity: 0, x: -40 }}
             transition={{ duration: 0.5 }}
-            className="mx-16"
+            className="mx-12 sm:mx-16"
           >
             <motion.div
               className="group relative backdrop-blur-md bg-gradient-to-br from-cyan-900/10 to-blue-900/10 border border-cyan-500/20 rounded-3xl overflow-hidden shadow-2xl"
@@ -136,7 +136,7 @@ const Certificates = () => {
               />
 
               {/* Certificate Image */}
-              <div className="relative h-80 overflow-hidden">
+              <div className="relative h-56 sm:h-72 md:h-80 overflow-hidden">
                 <img
                   src={currentCert.image}
                   alt={currentCert.title}
@@ -146,7 +146,7 @@ const Certificates = () => {
                 
                 {/* Floating Award Icon */}
                 <motion.div
-                  className="absolute top-6 right-6 p-3 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full shadow-lg"
+                  className="absolute top-4 right-4 sm:top-6 sm:right-6 p-2.5 sm:p-3 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full shadow-lg"
                   animate={{ 
                     rotate: [0, 10, -10, 0],
                     scale: [1, 1.1, 1]
@@ -157,14 +157,14 @@ const Certificates = () => {
                     ease: "easeInOut"
                   }}
                 >
-                  <Award className="w-6 h-6 text-black" />
+                  <Award className="w-5 h-5 sm:w-6 sm:h-6 text-black" />
                 </motion.div>
               </div>
 
               {/* Certificate Content */}
-              <div className="relative z-10 p-8">
+              <div className="relative z-10 p-5 sm:p-8">
                 <motion.h3 
-                  className="text-3xl font-bold text-white mb-3 group-hover:text-cyan-300 transition-colors duration-300"
+                  className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-3 group-hover:text-cyan-300 transition-colors duration-300"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.2 }}
@@ -173,7 +173,7 @@ const Certificates = () => {
                 </motion.h3>
                 
                 <motion.p 
-                  className="text-blue-400 font-semibold text-xl mb-4"
+                  className="text-blue-400 font-semibold text-base sm:text-lg md:text-xl mb-4"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.3 }}
@@ -182,7 +182,7 @@ const Certificates = () => {
                 </motion.p>
                 
                 <motion.div 
-                  className="flex items-center gap-3 text-gray-400 text-lg mb-6"
+                  className="flex items-center gap-3 text-gray-400 text-sm sm:text-base md:text-lg mb-6"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.4 }}
@@ -195,7 +195,7 @@ const Certificates = () => {
                   href={currentCert.credentialUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 rounded-xl transition-all duration-300 text-lg font-semibold text-black shadow-lg"
+                  className="inline-flex w-full sm:w-auto justify-center items-center gap-3 px-5 sm:px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 rounded-xl transition-all duration-300 text-base sm:text-lg font-semibold text-black shadow-lg"
                   whileHover={{ 
                     scale: 1.05,
                     boxShadow: '0 10px 30px rgba(0, 212, 255, 0.4)'

@@ -25,7 +25,7 @@ const WorkExperience = () => {
   ];
 
   return (
-    <section id="experience" className="py-12 px-4">
+    <section id="experience" className="py-12 px-4 overflow-x-hidden">
       <div className="max-w-6xl mx-auto">
         <motion.div
           ref={ref}
@@ -48,7 +48,7 @@ const WorkExperience = () => {
             {experiences.map((experience, index) => (
               <motion.div
                 key={experience.id}
-                initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
+                initial={{ opacity: 0, x: index % 2 === 0 ? -40 : 40 }}
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.8, delay: index * 0.3 }}
                 className={`relative flex items-center ${

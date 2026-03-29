@@ -16,7 +16,7 @@ const Skills = () => {
     {
       category: 'Backend',
       icon: <Database className="w-6 h-6" />,
-      skills: ['Node.js', 'Express.js', 'Python', 'MySQL', 'MongoDB','Spring Boot'],
+      skills: ['Node.js', 'Express.js','Python', 'MySQL', 'MongoDB','Spring Boot'],
       color: 'from-blue-400 to-blue-600',
     },
     {
@@ -28,7 +28,7 @@ const Skills = () => {
     {
       category: 'Languages',
       icon: <MessageSquare className="w-6 h-6" />,
-      skills: ['JavaScript','Java', 'TypeScript', 'Python', 'C++', 'SQL', 'Bash'],
+      skills: ['JavaScript','Java', 'TypeScript', 'Python', 'SQL', 'NoSQL '],
       color: 'from-green-400 to-green-600',
     },
   ];

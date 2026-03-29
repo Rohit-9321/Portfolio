@@ -40,9 +40,27 @@ const Projects = () => {
       description: 'Responsive portfolio website showcasing projects and skills with modern animations and optimized performance.',
       tech: ['React', 'Tailwind CSS', 'Framer Motion'],
       image: 'https://res.cloudinary.com/dbiapbspe/image/upload/v1758435361/WhatsApp_Image_2025-09-21_at_11.44.01_jum3gj.jpg',
-      github: '#',
-      demo: '#',
+      github: 'https://github.com/Rohit-9321/Portfolio',
+      demo: 'https://portfolio-rpbx.onrender.com/',
     },
+    {
+  id: 5,
+  title: 'GigFlow',
+  description: 'Full-stack freelance marketplace application where users can post gigs, submit bids, and hire freelancers. Features include real-time notifications using Socket.io, secure JWT authentication, atomic transaction-safe hiring logic, live search, and responsive design for mobile and web.',
+  tech: ['React', 'Node.js', 'MongoDB', 'Express', 'Socket.io', 'Redux Toolkit', 'Tailwind CSS'],
+  image: 'https://res.cloudinary.com/dbiapbspe/image/upload/v1774802071/ef1b178f-ffa1-419d-85cd-9d992c68e5cc.png',
+  github: 'https://github.com/Rohit-9321/MiniProject',
+  demo: 'https://gigflow1.onrender.com/'
+},
+{
+  id: 6,
+  title: 'Portfolio of Dr Maya',
+  description: 'A modern portfolio website built using Next.js showcasing professional details, projects, and achievements. Features fast performance, optimized fonts with next/font, and seamless deployment on Vercel. Designed with a clean and responsive UI for an excellent user experience.',
+  tech: ['Next.js', 'React', 'Vercel', 'CSS'],
+  image: 'https://res.cloudinary.com/dbiapbspe/image/upload/v1774802514/cfcdc7d4-52ae-4388-9c99-d14d41073c67.png',
+  github: 'https://github.com/Rohit-9321/Grow',
+  demo: 'https://grow-one-kappa.vercel.app/'
+}
   ];
 
   return (

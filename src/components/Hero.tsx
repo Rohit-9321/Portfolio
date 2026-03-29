@@ -28,7 +28,7 @@ const Hero = () => {
   }, [text, isDeleting, wordIndex]);
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden px-2 sm:px-4">
       {/* Animated Background */}
       <div className="absolute inset-0">
         <motion.div
@@ -72,14 +72,14 @@ const Hero = () => {
         />
       </div>
 
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
+      <div className="relative z-10 text-center px-3 sm:px-4 max-w-4xl mx-auto pt-20 sm:pt-16">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
         >
           <motion.h1
-            className="text-5xl md:text-7xl font-bold mb-6"
+            className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight"
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.5 }}
@@ -106,7 +106,7 @@ const Hero = () => {
         </motion.div>
 
         <motion.div
-          className="text-2xl md:text-4xl font-light mb-8 h-12 flex items-center justify-center"
+          className="text-xl sm:text-2xl md:text-4xl font-light mb-8 min-h-[3rem] sm:h-12 flex items-center justify-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1 }}
@@ -124,7 +124,7 @@ const Hero = () => {
         </motion.div>
 
         <motion.p
-          className="text-lg md:text-xl text-gray-300 mb-12 leading-relaxed max-w-2xl mx-auto"
+          className="text-base sm:text-lg md:text-xl text-gray-300 mb-10 sm:mb-12 leading-relaxed max-w-2xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.5 }}
@@ -139,13 +139,14 @@ const Hero = () => {
           transition={{ duration: 1, delay: 2 }}
         >
           <motion.button
-  className="group relative px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full font-semibold text-black overflow-hidden cursor-pointer inline-flex items-center justify-center"
+  className="group relative px-6 sm:px-8 py-3.5 sm:py-4 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full font-semibold text-black overflow-hidden cursor-pointer inline-flex items-center justify-center w-full sm:w-auto"
   whileHover={{ scale: 1.05 }}
   whileTap={{ scale: 0.95 }}
   onClick={() => {
     const link = document.createElement('a');
-    link.href = '/Rohit Hariram Gupta.pdf';
-    link.download = 'Rohit-Gupta-Resume.pdf';
+    link.href = 'https://drive.google.com/file/d/1YOVm37tlpKE2CTE8OcK_BMWHeFLQTK2S/view?usp=drivesdk';
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

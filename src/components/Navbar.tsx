@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState('home');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navItems = [
     { id: 'home', label: 'Home' },
@@ -40,6 +41,7 @@ const Navbar = () => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+      setIsMobileMenuOpen(false);
     }
   };
 
@@ -93,6 +95,8 @@ const Navbar = () => {
             <motion.button
               whileTap={{ scale: 0.95 }}
               className="text-gray-300 hover:text-cyan-400 transition-colors duration-300"
+              aria-label="Toggle navigation menu"
+              onClick={() => setIsMobileMenuOpen((prev) => !prev)}
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -100,6 +104,31 @@ const Navbar = () => {
             </motion.button>
           </div>
         </div>
+
+        {isMobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            className="md:hidden pb-4"
+          >
+            <div className="max-h-[70vh] overflow-y-auto rounded-xl border border-cyan-500/20 bg-black/95 p-2">
+              {navItems.map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
+                  className={`w-full rounded-lg px-4 py-3 text-left text-sm transition-colors duration-300 ${
+                    activeSection === item.id
+                      ? 'bg-cyan-500/20 text-cyan-300'
+                      : 'text-gray-300 hover:bg-cyan-500/10 hover:text-cyan-300'
+                  }`}
+                >
+                  {item.label}
+                </button>
+              ))}
+            </div>
+          </motion.div>
+        )}
       </div>
     </motion.nav>
   );

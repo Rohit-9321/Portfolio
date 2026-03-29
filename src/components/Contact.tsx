@@ -12,18 +12,18 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-b from-gray-900 to-black text-white">
-      <div className="container mx-auto px-6" ref={ref}>
+    <section id="contact" className="py-14 sm:py-20 bg-gradient-to-b from-gray-900 to-black text-white">
+      <div className="container mx-auto px-4 sm:px-6" ref={ref}>
         <motion.h2
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
           variants={fadeInUp}
-          className="text-4xl font-bold text-center mb-16"
+          className="text-3xl sm:text-4xl font-bold text-center mb-10 sm:mb-16"
         >
           Get in Touch
         </motion.h2>
 
-        <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 sm:gap-12 max-w-6xl mx-auto">
           {/* Left Side - Contact Info */}
           <motion.div
             initial="hidden"
@@ -31,20 +31,20 @@ const Contact = () => {
             variants={fadeInUp}
             className="space-y-8"
           >
-            <p className="text-lg text-gray-300">
+            <p className="text-base sm:text-lg text-gray-300">
               Feel free to reach out to me for collaborations, opportunities, or just to say hi!
             </p>
 
             <div className="space-y-4">
-              <div className="flex items-center space-x-4">
+              <div className="flex items-start space-x-4 break-all">
                 <Mail className="text-blue-400" />
                 <span>mail.gupta.rohit99@gmail.com</span>
               </div>
-              <div className="flex items-center space-x-4">
+              <div className="flex items-start space-x-4">
                 <Phone className="text-green-400" />
                 <span>+91 9321451171</span>
               </div>
-              <div className="flex items-center space-x-4">
+              <div className="flex items-start space-x-4">
                 <MapPin className="text-red-400" />
                 <span>Uttan Bhayander West , Mumbai Maharastra, India(401106)</span>
               </div>

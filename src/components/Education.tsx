@@ -53,7 +53,7 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="py-12 px-4">
+    <section id="education" className="py-12 px-4 overflow-x-hidden">
       <div className="max-w-6xl mx-auto">
         <motion.div
           ref={ref}
@@ -76,7 +76,7 @@ const Education = () => {
             {education.map((edu, index) => (
               <motion.div
                 key={edu.id}
-                initial={{ opacity: 0, x: index % 2 === 0 ? -80 : 80, rotateY: index % 2 === 0 ? -15 : 15 }}
+                initial={{ opacity: 0, x: index % 2 === 0 ? -35 : 35, rotateY: index % 2 === 0 ? -8 : 8 }}
                 animate={isInView ? { opacity: 1, x: 0, rotateY: 0 } : {}}
                 transition={{ duration: 0.8, delay: index * 0.4 }}
                 className={`relative flex items-center ${
