@@ -144,7 +144,7 @@ const Hero = () => {
   whileTap={{ scale: 0.95 }}
   onClick={() => {
     const link = document.createElement('a');
-    link.href = 'https://drive.google.com/file/d/1YOVm37tlpKE2CTE8OcK_BMWHeFLQTK2S/view?usp=drivesdk';
+    link.href = 'https://drive.google.com/file/d/1tecVP6n89iyq31KtBnFd5eLiCRelELyW/view?usp=drivesdk';
     link.target = '_blank';
     link.rel = 'noopener noreferrer';
     document.body.appendChild(link);
