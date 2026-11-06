@@ -64,7 +64,7 @@ const About = () => {
                   
                   <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
                     I’m a Full Stack Developer with experience in React.js, Node.js, databases, Java APIs,and Docker. 
-                    I have completed an internship as a backend developer, where I gained hands-on experience building and maintaining robust backend systems. 
+                    I have completed an internship as a backend developer and Full Stack Developer, where I gained hands-on experience building and maintaining robust backend systems. 
                     I focus on creating clean, responsive, and efficient web applications and enjoy working on projects end-to-end
                   </p>
                   

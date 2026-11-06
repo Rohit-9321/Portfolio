@@ -7,8 +7,22 @@ const WorkExperience = () => {
   const isInView = useInView(ref, { once: true, threshold: 0.1 });
 
   const experiences = [
-    {
+{
   id: 1,
+  title: 'Full Stack Developer Intern',
+  company: 'Vivrelle Lifestyle Private Limited',
+  location: 'Remote',
+  duration: 'Jan 2026 – Apr 2026',
+  description: 'Worked as a Full Stack Developer Intern, contributing to the development and maintenance of web applications using React.js, Node.js, Express.js, and MongoDB.',
+  achievements: [
+    'Developed and integrated frontend components with backend REST APIs',
+    'Worked on inventory, product catalog, and stock tracking functionalities',
+    'Implemented backend database operations, authentication, validation, and error-handling middleware',
+    'Collaborated on debugging and improving application functionality',
+  ],
+  technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'REST APIs', 'JavaScript'],
+}, {
+  id: 2,
   title: 'Backend Developer Intern',
   company: 'Arthlete (Startup)',
   location: 'Remote',

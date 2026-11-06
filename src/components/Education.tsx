@@ -9,14 +9,14 @@ const Education = () => {
   const education = [
     {
       id: 1,
-      degree: 'B.E. in Computer Engineering (Pursuing - Final Year, CGPA 8.375)',
+      degree: 'B.E. in Computer Engineering (CGPA: 8.5/10)',
       school: 'Shree L.R. Tiwari College of Engineering',
       location: 'Mumbai, India',
       duration: 'Sep 2022 – Jun 2026',
-      gpa: '8.375/10',
-      description: 'Currently pursuing a Bachelor of Engineering in Computer Engineering with a strong foundation in software development, problem solving, and system design.',
+      gpa: '8.5/10',
+      description: 'Completed Bachelor of Engineering in Computer Engineering with a strong foundation in software development, problem solving, and system design.',
       achievements: [
-        'Maintained a CGPA of 8.375',
+        'Maintained a CGPA of 8.5',
         'Worked on academic projects showcasing practical applications of computer science',
         'Actively participated in technical workshops.',
       ],
@@ -24,11 +24,11 @@ const Education = () => {
     },
     {
       id: 2,
-      degree: 'HSC in Science (PCMB - 68.80%)',
+      degree: 'HSC in Science (PCMB - 68.83%)',
       school: 'S.T. Joseph High College, Uttan',
       location: 'Mumbai, India',
       duration: 'Jul 2021 – Mar 2022',
-      gpa: '68.80%',
+      gpa: '68.83%',
       description: 'Completed Higher Secondary Certificate with focus on Physics, Chemistry, Mathematics, and Biology.',
       achievements: [
         'Cleared JEE Main, qualified to attempt JEE Advanced'

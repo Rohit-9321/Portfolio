@@ -1,6 +1,7 @@
+
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { Github, ExternalLink, Code, Database, Globe } from 'lucide-react';
+import { Github, ExternalLink } from 'lucide-react';
 
 const Projects = () => {
   const ref = useRef(null);
@@ -10,57 +11,86 @@ const Projects = () => {
     {
       id: 1,
       title: 'FitTrack',
-      description: 'Full-stack fitness tracking web application with React, Node.js, and MongoDB. Admins can assign exercises to users, and users can view and follow their assigned workouts while tracking their progress.',
+      description:
+        'Full-stack fitness tracking web application with React, Node.js, and MongoDB. Admins can assign exercises to users, and users can view and follow their assigned workouts while tracking their progress.',
       tech: ['React', 'Node.js', 'MongoDB', 'Express'],
-      image: 'https://res.cloudinary.com/dbiapbspe/image/upload/v1758433264/WhatsApp_Image_2025-09-21_at_11.10.42_ilotpm.jpg',
+      image:
+        'https://res.cloudinary.com/dbiapbspe/image/upload/v1758433264/WhatsApp_Image_2025-09-21_at_11.10.42_ilotpm.jpg',
       github: 'https://github.com/Rohit-9321/FitTrack',
       demo: 'https://tinyurl.com/29t4mtyj',
     },
     {
       id: 2,
+      title: 'GeoOptional',
+      description:
+        'Full-stack educational platform designed for UPSC Geography Optional aspirants. Provides comprehensive Geography Optional study resources, structured courses, practice questions, current affairs updates, and learning materials to help students prepare effectively for the UPSC Civil Services Examination.',
+      tech: ['React', 'Node.js', 'Firebase', 'JavaScript'],
+      image: 'https://res.cloudinary.com/dbiapbspe/image/upload/v1793946742/Screenshot_2026-11-06_120134_oyvusd.png',
+      github: 'https://www.geooptional.com/',
+      demo: 'https://www.geooptional.com/',
+    },
+    {
+      id: 3,
+      title: 'Portfolio of Dr Maya',
+      description:
+        'A modern portfolio website built using Next.js showcasing professional details, projects, and achievements. Features fast performance, optimized fonts with next/font, and seamless deployment on Vercel. Designed with a clean and responsive UI for an excellent user experience.',
+      tech: ['Next.js', 'React', 'Vercel', 'CSS'],
+      image:
+        'https://res.cloudinary.com/dbiapbspe/image/upload/v1774802514/cfcdc7d4-52ae-4388-9c99-d14d41073c67.png',
+      github: 'https://github.com/Rohit-9321/Grow',
+      demo: 'https://grow-one-kappa.vercel.app/',
+    },
+    {
+      id: 4,
       title: 'Levitate - UPSC Portal for YouTubers',
-      description: 'A platform designed for UPSC content creators and aspirants. Users can watch UPSC-related YouTube videos curated by creators and take interactive quizzes to test their knowledge and track progress.',
+      description:
+        'A platform designed for UPSC content creators and aspirants. Users can watch UPSC-related YouTube videos curated by creators and take interactive quizzes to test their knowledge and track progress.',
       tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS'],
-      image: 'https://res.cloudinary.com/dbiapbspe/image/upload/v1758434130/WhatsApp_Image_2025-09-21_at_11.15.51_icu4wb.jpg',
+      image:
+        'https://res.cloudinary.com/dbiapbspe/image/upload/v1758434130/WhatsApp_Image_2025-09-21_at_11.15.51_icu4wb.jpg',
       github: 'https://github.com/Rohit-9321/Levitate',
       demo: 'https://levitate-frontend.onrender.com/',
     },
     {
-      id: 3,
+      id: 5,
       title: 'Inventory Management',
-      description: 'System used to store all products',
-      tech: ['React','Node.js', 'Express', 'MongoDB' ],
-      image: 'https://res.cloudinary.com/dbiapbspe/image/upload/v1758548124/WhatsApp_Image_2025-09-22_at_19.04.25_jrqp8n.jpg',
+      description: 'System used to store all products.',
+      tech: ['React', 'Node.js', 'Express', 'MongoDB'],
+      image:
+        'https://res.cloudinary.com/dbiapbspe/image/upload/v1758548124/WhatsApp_Image_2025-09-22_at_19.04.25_jrqp8n.jpg',
       github: 'https://github.com/Rohit-9321/SidhhantAgarwa',
       demo: 'https://sidhhantagarwa-frontend.onrender.com/',
     },
     {
-      id: 4,
+      id: 6,
       title: 'Portfolio Website',
-      description: 'Responsive portfolio website showcasing projects and skills with modern animations and optimized performance.',
+      description:
+        'Responsive portfolio website showcasing projects and skills with modern animations and optimized performance.',
       tech: ['React', 'Tailwind CSS', 'Framer Motion'],
-      image: 'https://res.cloudinary.com/dbiapbspe/image/upload/v1758435361/WhatsApp_Image_2025-09-21_at_11.44.01_jum3gj.jpg',
+      image:
+        'https://res.cloudinary.com/dbiapbspe/image/upload/v1758435361/WhatsApp_Image_2025-09-21_at_11.44.01_jum3gj.jpg',
       github: 'https://github.com/Rohit-9321/Portfolio',
       demo: 'https://portfolio-rpbx.onrender.com/',
     },
     {
-  id: 5,
-  title: 'GigFlow',
-  description: 'Full-stack freelance marketplace application where users can post gigs, submit bids, and hire freelancers. Features include real-time notifications using Socket.io, secure JWT authentication, atomic transaction-safe hiring logic, live search, and responsive design for mobile and web.',
-  tech: ['React', 'Node.js', 'MongoDB', 'Express', 'Socket.io', 'Redux Toolkit', 'Tailwind CSS'],
-  image: 'https://res.cloudinary.com/dbiapbspe/image/upload/v1774802071/ef1b178f-ffa1-419d-85cd-9d992c68e5cc.png',
-  github: 'https://github.com/Rohit-9321/MiniProject',
-  demo: 'https://gigflow1.onrender.com/'
-},
-{
-  id: 6,
-  title: 'Portfolio of Dr Maya',
-  description: 'A modern portfolio website built using Next.js showcasing professional details, projects, and achievements. Features fast performance, optimized fonts with next/font, and seamless deployment on Vercel. Designed with a clean and responsive UI for an excellent user experience.',
-  tech: ['Next.js', 'React', 'Vercel', 'CSS'],
-  image: 'https://res.cloudinary.com/dbiapbspe/image/upload/v1774802514/cfcdc7d4-52ae-4388-9c99-d14d41073c67.png',
-  github: 'https://github.com/Rohit-9321/Grow',
-  demo: 'https://grow-one-kappa.vercel.app/'
-}
+      id: 7,
+      title: 'GigFlow',
+      description:
+        'Full-stack freelance marketplace application where users can post gigs, submit bids, and hire freelancers. Features include real-time notifications using Socket.io, secure JWT authentication, atomic transaction-safe hiring logic, live search, and responsive design for mobile and web.',
+      tech: [
+        'React',
+        'Node.js',
+        'MongoDB',
+        'Express',
+        'Socket.io',
+        'Redux Toolkit',
+        'Tailwind CSS',
+      ],
+      image:
+        'https://res.cloudinary.com/dbiapbspe/image/upload/v1774802071/ef1b178f-ffa1-419d-85cd-9d992c68e5cc.png',
+      github: 'https://github.com/Rohit-9321/MiniProject',
+      demo: 'https://gigflow1.onrender.com/',
+    },
   ];
 
   return (
@@ -121,6 +151,7 @@ const Projects = () => {
                 <div className="flex gap-3">
                   <motion.a
                     href={project.demo}
+
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 rounded-lg transition-all duration-300 text-sm font-medium text-white"
@@ -130,6 +161,7 @@ const Projects = () => {
                     <ExternalLink size={16} />
                     Live Demo
                   </motion.a>
+
                   <motion.a
                     href={project.github}
                     target="_blank"
